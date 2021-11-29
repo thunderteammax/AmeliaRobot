@@ -8,15 +8,13 @@ __help__ = """
  • `/feed`*:* sends random feed gif
  • `/poke`*:* sends random poke gif
  • `/waifu`*:* sends random waifu sticker/image
- • `/kiss`*:* sends random kiss gif
  • `/baka`*:* sends random baka gif
  • `/smug`*:* sends random smug gif
- • `/foxgirl`*:* sends random foxgirl image
  • `/feed`*:* sends random feed gif
  • `/wallpaper`*:* sends random best anime wallpapers.
  
 
-*Style your text with Amelia!*
+*Style your text with Alpha Ment*
  • `/weebify <text>`*:* weebify your text!
  • `/bubble <text>`*:* bubble your text!
  • `/fbubble <text>`*:* bubble-filled your text!
@@ -33,4 +31,4 @@ __help__ = """
 """
 
 
-__mod_name__ = "AmeliaSpecial.py"
+__mod_name__ = "Special"
