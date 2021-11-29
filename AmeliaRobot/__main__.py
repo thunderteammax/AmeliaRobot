@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/329647a798cccb101aecf.jpg), ɪᴍ Amelia ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help   
+ʜᴇʟʟᴏ [😄](https://telegra.ph/file/e5bd936829b8799638bba.png), ɪᴍ Alpha Ment A Mɪɴɪ Aᴅᴠᴀɴᴄᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! Enter` /help   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ Amelia ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/ameliagroup_bot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ Me ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/alphamentbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="amelia_"),
@@ -90,21 +90,19 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` Amelia [🙋‍♀️](https://telegra.ph/file/329647a798cccb101aecf.jpg)
+`ʜɪ.. ɪ'ᴍ` Alpha Ment [👋️](https://telegra.ph/file/e5bd936829b8799638bba.png)
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
-amelia_IMG = "https://telegra.ph/file/329647a798cccb101aecf.jpg"
+amelia_IMG = "https://telegra.ph/file/e5bd936829b8799638bba.png"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @itsmelegend\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Hey we don't need any donations right Now \
+ Thanks for your Cooperation ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -349,7 +347,7 @@ def amelia_about_callback(update, context):
     query = update.callback_query
     if query.data == "amelia_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *amelia*, a powerful group management bot built to help you manage your group easily.
+            text=""" I'm *Alpha Ment*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -357,8 +355,8 @@ def amelia_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_bot licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/xabhish3k/AmeliaRobot).
-                 \n\nIf you have any question about amelia, let us know at @warbotzchat .""",
+                 \nHere is the [💾Repository](https://telegra.ph/Alpha-Ment-11-29-2).
+                 \n\nIf you have any question about Alpha Ment, let us know at @thunderbotcontact .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -384,8 +382,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *amelia*
-                 \nHere is the [Source Code](https://github.com/xAbhishek/AmeliaRobot) .""",
+            text=""" Hi.. I'm *Alpha Ment*
+                 \nHere is the [Source Code](https://telegra.ph/Alpha-Ment-11-29-2) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -632,7 +630,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 2119454940 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -680,7 +678,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 💃")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm Online")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
