@@ -430,14 +430,14 @@ async def del_profanity(event):
 
 __help__ = """
 <b> Group Guardian: </b>
-✪ Amelia can protect your group from NSFW senders, Slag word users and also can force members to use English
+✪ Alpha Ment can protect your group from NSFW senders, Slag word users and also can force members to use English
 
 <b>Commmands</b>
  - /gshield <i>on/off</i> - Enable|Disable Porn cleaning
  - /globalmode <i>on/off</i> - Enable|Disable English only mode
  - /profanity <i>on/off</i> - Enable|Disable slag word cleaning
  
-Note: Special credits goes to @Thewarbotz
+Note: This is a primary shield from Thunder GoHelp
  
 """
 __mod_name__ = "Shield"
